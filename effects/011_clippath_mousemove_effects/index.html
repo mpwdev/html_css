@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clip-path mousemove effects</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+  <section class="banner"></section>
+  <div class="content">
+   <h2>CSS clip-path mousemove effects</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel, reprehenderit fuga rerum, perferendis odio quae facilis veritatis corporis ullam nihil! Quis ipsa consequatur saepe ut molestias? Itaque officia porro veniam aperiam quos velit nisi, error numquam eaque doloribus optio?</p>
+ </div>
+
+<script type="text/javascript">
+    var pos = document.documentElement;
+    pos.addEventListener("mousemove", e => {
+      pos.style.setProperty('--x', e.clientX + "px");
+      pos.style.setProperty('--y', e.clientY + "px");
+    });
+  </script>
+
+</body>
+</html>

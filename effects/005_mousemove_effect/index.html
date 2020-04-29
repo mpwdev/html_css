@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mousemove Effect</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <section>
+    <div class="light"></div>
+  <h2>Power of Light / Mousemove Effect</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, laudantium corrupti? Quaerat unde nemo laborum harum quasi, sequi soluta tempore nisi necessitatibus rem vitae doloribus quo ut expedita architecto corrupti iure voluptatum nulla totam est itaque! Aspernatur dolorem inventore optio adipisci cumque aliquam perferendis debitis harum laborum repellat. Delectus, velit doloremque eligendi reprehenderit ipsum alias? Quaerat id ea, cum delectus porro exercitationem corporis cupiditate debitis dignissimos error fugit quam architecto laborum. Ea accusamus mollitia atque quo asperiores nostrum recusandae non quae. Deserunt molestiae atque recusandae dolorum minima adipisci accusantium eaque at eum, est error cupiditate veniam, vitae excepturi vero! Minima voluptas deserunt recusandae officiis? Quam voluptatibus veritatis exercitationem aspernatur corporis laboriosam expedita quia repellendus pariatur. Quo inventore explicabo, maxime delectus possimus eius atque consequatur doloremque deleniti fugit exercitationem quasi aliquid sit aperiam quis quas nostrum harum porro! Incidunt, nisi pariatur aliquam possimus iusto magni quae corporis accusantium ab debitis exercitationem facere laudantium itaque doloribus? Enim nesciunt ea praesentium fugit laboriosam. Quia odio voluptas provident odit aperiam, quas minus voluptatibus repudiandae! Eaque atque porro quae dignissimos, nesciunt illum neque laudantium dolorum repudiandae sit alias temporibus iure facere debitis amet possimus nam perspiciatis quidem dicta laboriosam eius doloremque, natus corrupti animi! Reprehenderit quo dolores dolorem. Nam numquam vitae fugit voluptate dolore quod laudantium dolor officiis, nostrum asperiores provident vel dolorum voluptatibus facilis accusantium quo consectetur in quisquam, impedit soluta aliquid dicta unde eum expedita. Sequi sunt quos libero quidem ratione in enim iusto quia, repellendus quas. Fugit quod odio repellat nesciunt blanditiis laborum? Sapiente, magnam beatae aut cupiditate adipisci officiis quos sit totam quis possimus minima at. Nesciunt quam provident assumenda quaerat, rerum at architecto odit nobis harum ducimus minima exercitationem quisquam quae consectetur nemo explicabo cupiditate nisi delectus dolor pariatur recusandae nam commodi. Repellendus aliquam magnam rerum dignissimos repellat iusto aspernatur.</p>
+
+  <img src="img.jpg" alt="">
+
+</section>
+
+
+  <!-- add jquery link
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   -->
+<!-- use local file -->
+<script src="./jquery-3.4.1.min.js"></script>
+
+
+  <!-- effect script -->
+  <script type="text/javascript">
+    $(document).mousemove(function(e){
+      var X = e.pageX;
+      var Y = e.pageY;
+      $('.light').css('background','radial-gradient(circle at '+X+'px '+Y+'px, transparent, #000 30% )');
+    })
+  </script>
+
+</body>
+</html>

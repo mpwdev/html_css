@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Swiper demo</title>
+
+  <!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #fff;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-button-next {
+      right: -50px;
+      left: auto;
+    }
+
+     .swiper-button-prev {
+      left: -50px;
+      right: auto;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('./img/abs.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('./img/build.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('./img/land.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('./img/colors.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('./img/dev.jpg')"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next swiper-button-black"></div>
+    <div class="swiper-button-prev swiper-button-black"></div>
+  </div>
+
+  <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        clickable: true,
+      },
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+/* orig https://youtu.be/96c_JvdCHuY */
+
+
+/* button style */
+.my_bttn {
+  height: 45px;
+  width: 45px;
+  background-color: #F90F60;
+  border: none;
+  color: white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  display: none;
+
+}
+
+.my_bttn:hover {
+  transform: scale(1.05) translateY(-5px);
+  transition: 0.3s;
+}
+
+/* style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+  background-color: #F90F60;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  padding: 10px;
+}
